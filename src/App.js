@@ -1,23 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+//import './App.css';
+import './mosca.css';
+//import './menu.js';
+import { Outlet } from 'react-router-dom';
+import Navbar from './components/Navbar';
 
 function App() {
+  const navSlide = () => {
+    const burger = document.querySelector(".burger");
+    const nav = document.querySelector(".nav-links");
+    const navLinks = document.querySelectorAll(".nav-links a");
+  
+    burger.addEventListener("click", () => {
+      nav.classList.toggle("nav-active");
+  
+      navLinks.forEach((link, index) => {
+        if (link.style.animation) {
+          link.style.animation = "";
+        } else {
+          link.style.animation = `navLinkFade 0.5s ease forwards ${
+            index / 7 + 0.5
+          }s `;
+        }
+      });
+      burger.classList.toggle("toggle");
+    });
+    //
+  };
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    navSlide();
+  });
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1>Eliton Trindade Gomes</h1>
+        <p>Professor de Física Teórica</p>
       </header>
+      <Navbar />
+ 
+      <main>
+              
+        <div class="container">
+          
+            <Outlet/>
+        
+        </div>  
+      </main>
+      <footer>
+        &copy; 2023 Nome do Físico. Todos os direitos reservados.
+      </footer>
     </div>
   );
 }
