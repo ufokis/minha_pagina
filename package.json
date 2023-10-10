@@ -1,6 +1,6 @@
 {
     "homepage": "https://ufokis.github.io/minha_pagina",
-    "name": "minha_pagina",
+    "name": "app",
     "version": "0.1.0",
     "private": true,
     "dependencies": {

@@ -48,7 +48,7 @@ function App() {
         </div>  
       </main>
       <footer>
-        &copy; 2023 Nome do Físico. Todos os direitos reservados.
+        &copy; 2023 Eliton Trindade Gomes. Todos os direitos reservados.
       </footer>
     </div>
   );
