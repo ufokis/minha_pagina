@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ufokis.github.io/minha_pagina/static/css/main.12249198.css",
+    "main.js": "/ufokis.github.io/minha_pagina/static/js/main.5827ed16.js",
+    "index.html": "/ufokis.github.io/minha_pagina/index.html",
+    "main.12249198.css.map": "/ufokis.github.io/minha_pagina/static/css/main.12249198.css.map",
+    "main.5827ed16.js.map": "/ufokis.github.io/minha_pagina/static/js/main.5827ed16.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12249198.css",
+    "static/js/main.5827ed16.js"
+  ]
+}
