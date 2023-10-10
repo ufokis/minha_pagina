@@ -35,7 +35,7 @@ function App() {
     <div className="App">
       <header>
         <h1>Eliton Trindade Gomes</h1>
-        <p>Mestrando em física Teórica</p>
+        <p>Mestrando em Física Teórica</p>
       </header>
       <Navbar />
  
